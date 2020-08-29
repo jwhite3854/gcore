@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: pick-php73
+    ports:
+      - 8084:80
+    volumes:
+      - .:/app
+  composer:
+    image: composer:1.9
+    volumes:
+      - .:/app

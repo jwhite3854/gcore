@@ -1,0 +1,16 @@
+{
+    "name": "jaw/gaunt-core",
+    "description": "Geotab API connection",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "~5.3.1|~6.0",
+        "guzzlehttp/psr7": "^1.2"
+    },
+    "type": "library",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Jaw\\GauntCore\\": "src/"
+        }
+    }
+}
